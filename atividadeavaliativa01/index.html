@@ -9,62 +9,66 @@
   <title>Gerenciador de Tarefas</title>
 </head>
 
-<body class="container">
+<body>
 
-  <header>
+  <div class="container">
+    <header>
 
-    <h1>Gerenciador de Itens</h1>
+      <h1>Gerenciador de Itens</h1>
 
-    <nav>
-      <ul>
-        <li><a href="#" onclick="mostrarCadastro()">Cadastrar Itens</a></li>
-        <li><a href="#" onclick="mostrarLista()">Ver Lista</a></li>
-      </ul>
-    </nav>
+      <nav>
+        <ul>
+          <li><a href="#" onclick="mostrarCadastro()">Cadastrar Itens</a></li>
+          <li><a href="#" onclick="mostrarLista()">Ver Lista</a></li>
+        </ul>
+      </nav>
 
-  </header>
+    </header>
 
-  <main >
+    <main>
 
-    <!--seção de cadastro de itens-->
-    <section id="cadastro" class="secao">
+      <!--seção de cadastro de itens-->
+      <section id="cadastro" class="secao">
 
-      <h2>Adicionar Novo item</h2>
+        <h2>Adicionar Novo item</h2>
 
-      <form id="formItem">
+        <form id="formItem">
 
-        <div>
-          <label for="titulo"></label>
-          <input type="text" id="titulo" placeholder="Tilulo*" required>
-          <p id="erroTitulo" class="erro"></p>
+          <div>
+            <label for="titulo"></label>
+            <input type="text" id="titulo" placeholder="Tilulo*" required>
+            <p id="erroTitulo" class="erro"></p>
+          </div>
+
+          <div>
+            <label for="descricao"></label>
+            <textarea name="" id="descricao" placeholder="Descrição:"></textarea>
+          </div>
+
+          <button type="submit">Salvar</button>
+        </form>
+      </section>
+
+      <!-- seção de listagem de itens -->
+      <section id="lista" class="secao" style="display:none">
+
+        <h2>Lista de Itens</h2>
+
+        <div id="itens">
+          <p id="sem-itens">Você ainda não tem itens cadastradas.</p>
+          <ul id="lista-itens"></ul>
         </div>
 
-        <div>
-          <label for="descricao"></label>
-          <textarea name="" id="descricao" placeholder="Descrição:"></textarea>
-        </div>
+      </section>
 
-        <button type="submit">Salvar</button>
-      </form>
-    </section>
-
-    <!-- seção de listagem de itens -->
-    <section id="lista" class="secao" style="display:none">
-
-      <h2>Lista de Itens</h2>
-
-      <div id="itens">
-        <p id="sem-itens">Você ainda não tem itens cadastradas.</p>
-        <ul id="lista-itens"></ul>
-      </div>
-
-    </section>
-
-  </main>
+    </main>
+    
+  </div>
 
   <footer>
-    Copyright (C) 2024
+    Copyright (C) 2025
   </footer>
+
 
 </body>
 
