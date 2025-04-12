@@ -23,7 +23,6 @@ h1, h2{
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
-
 }
 
 
@@ -61,7 +60,7 @@ nav ul li a:active {
 }
 
 #lista-itens {
-    
+    border-radius: 8px;
     list-style: none;
     text-align: center;
     display: flex;
@@ -71,4 +70,55 @@ nav ul li a:active {
     margin: 0 auto;
     padding: 0;
     width: 100%;
+    gap: 1rem;
 }
+
+#lista-itens li {
+    border-radius: 8px;
+    background-color: #cdcdcd;
+    width: 100%;
+    padding: 0;
+}
+
+.botao-remover {
+    all: unset;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    padding: 0.125rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    margin-bottom: 10px;
+
+}
+
+.botao-remover:hover {
+    background-color: #0080ff;
+}
+
+.botao-remover:active {
+    background-color: #424242;
+    font-weight: bold;
+}
+
+.item-conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+  
+@media (max-width: 480px) {
+    .container {
+      padding: 0.5rem;
+      font-size: 0.9rem;
+    }
+  }
+  
