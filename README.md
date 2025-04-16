@@ -3,8 +3,9 @@ execução do código:
 1. Abra o github com o link https://github.com/LucasACou/AA_TecWeb
 2. Clone o repositorio no vscode
 3. Use o comando: cd atividadeavaliativa01
-4. Utilize o comando: npm run dev
-5. Abra o link gerado no navegador
+4. Utilize o comando: npm install
+5. Utilize o comando: npm run dev
+6. Abra o link gerado no navegador
 
 funcionalidades:
 
