@@ -30,7 +30,6 @@ npm run dev
 ```
 
 5. Abra o link gerado, no navegador(*geralmente http://localhost:5173*)
-[http://localhost:5173](http://localhost:5173)
 
 Integrantes: 
 Arthur José Guedes Oliveira - 2222130059
