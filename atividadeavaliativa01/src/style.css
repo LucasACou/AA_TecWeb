@@ -1,124 +1,171 @@
-body {
-    font-family: Arial, sans-serif;
-    line-height: 2;
-    margin: 0;
-    padding: 20px;
-    background-color: rgb(124, 124, 124);
+* {
+  box-sizing: border-box;
 }
 
-h1, h2{
-    color: #0080ff;
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  margin: 16px;
+  background-color: rgb(179, 179, 179);
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+h1,
+h2 {
+  color: #0080ff;
 }
 
 .container {
-
-    max-width: 400px;
-    margin: 48px auto;
-    background: rgb(255, 255, 255);
-    padding: 16px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 15px 10px rgba(0,0,0,0.1);
-    text-align: center;
-    width: 100%;
-    flex-direction: column;
-    justify-content: center;
-    align-items: stretch;
+  max-width: 400px;
+  margin: 48px auto;
+  background: rgb(255, 255, 255);
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 100%;
 }
 
-
 footer {
-    text-align: center;
+  text-align: center;
 }
 
 nav ul {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0.5rem 0;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0.5rem 0;
 }
 
 nav ul li {
-    margin: 0 1rem;
+  margin: 0 1rem;
 }
 
 nav ul li a {
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #0080ff;
+  background-color: #0080ff;
 }
 
 nav ul li a:active {
-    background-color: #424242;
-    font-weight: bold;
+  background-color: #424242;
+  font-weight: bold;
+}
+
+.secao input {
+  all: unset;
+  width: 70%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.secao textarea {
+  all: unset;
+  width: 70%;
+  padding: 0.75rem;
+  border: 1px solid #000000;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: inherit;
+  box-sizing: border-box;
+  resize: vertical;
+  overflow-x: hidden;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+#cadastro button {
+  all: unset;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+#cadastro button:hover {
+  background-color: #0080ff;
+}
+
+#cadastro button:active {
+  background-color: #424242;
+  font-weight: bold;
 }
 
 #lista-itens {
-    border-radius: 8px;
-    list-style: none;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    padding: 0;
-    width: 100%;
-    gap: 1rem;
+  border-radius: 8px;
+  list-style: none;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  gap: 1rem;
 }
 
 #lista-itens li {
-    border-radius: 8px;
-    background-color: #cdcdcd;
-    width: 100%;
-    padding: 0;
+  border-radius: 8px;
+  background-color: #cdcdcd;
+  width: 100%;
+  padding: 0;
 }
 
 .botao-remover {
-    all: unset;
-    background-color: black;
-    color: white;
-    text-decoration: none;
-    padding: 0.125rem 1rem;
-    border-radius: 4px;
-    transition: background-color 0.3s;
-    margin-bottom: 10px;
-
+  all: unset;
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 0.125rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  margin-bottom: 10px;
 }
 
 .botao-remover:hover {
-    background-color: #0080ff;
+  background-color: #0080ff;
 }
 
 .botao-remover:active {
-    background-color: #424242;
-    font-weight: bold;
+  background-color: #424242;
+  font-weight: bold;
 }
 
 .item-conteudo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-
 @media (max-width: 768px) {
-    .container {
-      flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
   }
-  
+}
+
 @media (max-width: 480px) {
-    .container {
-      padding: 0.5rem;
-      font-size: 0.9rem;
-    }
+  .container {
+    padding: 0.5rem;
+    font-size: 0.9rem;
   }
-  
+}
