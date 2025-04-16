@@ -1,10 +1,12 @@
-# Atividade Avaliativa 01 – Tecnologias para Web
+# Atividades Avaliativas - Tecnologias Web
+
+## Atividade Avaliativa 01 – Tecnologias Web
 
 Este projeto é uma aplicação web simples que permite o **cadastro**, **listagem** e **remoção de itens**, com armazenamento em memória. Desenvolvido como parte da disciplina _Tecnologias para Web_.
 
 ---
 
-## Como executar o projeto
+### Como executar o projeto
 
 Siga os passos abaixo para rodar o projeto localmente:
 
