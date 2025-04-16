@@ -1,19 +1,17 @@
-execução do código:
+# Atividade Avaliativa 01 – Tecnologias para Web
 
-1. Abra o github com o link https://github.com/LucasACou/AA_TecWeb
-2. Clone o repositorio no vscode
-3. Use o comando: cd atividadeavaliativa01
-4. Utilize o comando: npm install
-5. Utilize o comando: npm run dev
-6. Abra o link gerado no navegador
+Este projeto é uma aplicação web simples que permite o **cadastro**, **listagem** e **remoção de itens**, com armazenamento em memória. Desenvolvido como parte da disciplina _Tecnologias para Web_.
 
-funcionalidades:
+---
 
-1. Cadastro de itens com nome e descrição
-2. Armazenamento de memória
-3. Listagem dinâmica atualizada 
-4. Remoção de itens
+## Como executar o projeto
 
-integrantes:
-Arthur José Guedes Oliveira - 2222130059
-Lucas Assunção coutinho - 2222130011
+Siga os passos abaixo para rodar o projeto localmente:
+
+1. Acesse o repositório no GitHub:  
+   [https://github.com/LucasACou/AA_TecWeb](https://github.com/LucasACou/AA_TecWeb)
+
+2. Clone o repositório no VS Code:
+
+   ```bash
+   git clone https://github.com/LucasACou/AA_TecWeb
