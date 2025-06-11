@@ -1,9 +1,9 @@
 {
   "livros": [
     {
-      "id": "1a2b",
       "nome": "A Divina Comédia",
-      "autor": "Dante Alighieri"
+      "autor": "Dante Alighieri",
+      "id": "1a2b"
     }
   ]
 }
